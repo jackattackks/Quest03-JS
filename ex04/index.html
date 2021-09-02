@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+    <div id="my_box" style= "background-color: red; position: absolute; right: 70; bottom: 70; min-width: 100px; min-height: 100px"></div>
+    <script type="text/javascript">
+        var element = document.getElementById("my_box");
+
+        function getStyles(){
+            var gotStyles = getComputedStyle(element);
+        };
+
+        function setStyles(){
+            element.style.setProperty('right', 0);
+            element.style.setProperty('bottom', 0);
+        };
+
+    </script>
+</html>
